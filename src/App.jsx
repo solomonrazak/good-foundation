@@ -7,7 +7,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-   <div>
+   <div className='text-4xl'>
     This is good foundation website
    </div>
   )
