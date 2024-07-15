@@ -1,9 +1,20 @@
-import React from 'react';
+import React from "react";
+import { FaFacebookF, FaYoutube, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div>Footer</div>
-  )
-}
+    <div>
+      <div>
+        <Logo />
+        <div className="flex ">
+          <FaFacebookF />
+          <FaYoutube />
+          <FaLinkedin />
+        </div>
+      </div>
+      <div></div>
+    </div>
+  );
+};
 
 export default Footer;
