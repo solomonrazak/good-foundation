@@ -1,4 +1,5 @@
 import React from "react";
+import gfis from '../assets/images/gfis.png'
 import { FaFacebookF, FaYoutube, FaLinkedin } from "react-icons/fa";
 
 
@@ -55,9 +56,10 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex flex-col md:flex-row md:justify-between md:items-center">
-        <div className="flex gap-2 text-white text-sm">
-        <p>Privacy Policy</p>
+        <div className="flex items-center text-white text-sm">
+        <img src={gfis} width={40} height={40} className="text-white hidden md:block"/>
         <p>Copyright&copy; Good Foundation International School</p>
+        
         </div>
         <p className="text-xs text-white mt-3">Developed by Super Simple - Dexter Inc.</p>
         
