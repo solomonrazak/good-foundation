@@ -5,7 +5,7 @@ import { FaFacebookF, FaYoutube, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="bg-green-400 mt-5 p-12 py-6">
+    <div className="bg-green-400 p-12 py-6">
       <div className="grid grid-cols-2 md:grid-cols-3 mb-8">
         <h1 className="text-xl col-span-3 font-bold text-white md:col-span-2">Good Foundation International School</h1>
         <div className="hidden md:flex gap-4 text-white text-2xl md:col-span-1 ml-40">
