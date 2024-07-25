@@ -33,7 +33,7 @@ const Grid = () => {
       <div className="border-2 border-dashed border-violet-400 rounded-md md:col-start-1 md:col-span-4 md:row-start-4 md:row-span-5 p-14">
         <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:mt-14">
         <LiaChalkboardTeacherSolid className="text-6xl text-violet-400"/>
-        <p className="text-[25px] font-medium text-gray-500 text-center">40+ teachers</p>
+        <p className="text-[25px] font-medium text-gray-500 text-center">40+ educators</p>
         </div>
         
       </div>
