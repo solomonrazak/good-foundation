@@ -8,6 +8,7 @@ import High from '../components/levels/High';
 import Boarding from '../components/levels/Boarding';
 import Environment from '../components/Environment';
 import Integration from '../components/Integration';
+import Mission from '../components/Mission';
 
 const Home = () => {
   return (
@@ -24,6 +25,7 @@ const Home = () => {
       </div>
       <Environment />
       <Integration />
+      <Mission />
     </div>
   )
 }
