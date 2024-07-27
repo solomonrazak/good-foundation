@@ -7,6 +7,7 @@ import Middle from '../components/levels/Middle';
 import High from '../components/levels/High';
 import Boarding from '../components/levels/Boarding';
 import Environment from '../components/Environment';
+import Integration from '../components/Integration';
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
 
       </div>
       <Environment />
+      <Integration />
     </div>
   )
 }
