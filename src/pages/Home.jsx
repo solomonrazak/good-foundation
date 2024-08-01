@@ -9,6 +9,7 @@ import Boarding from '../components/levels/Boarding';
 import Environment from '../components/Environment';
 import Integration from '../components/Integration';
 import Mission from '../components/Mission';
+import InfinteCarousel from '../components/special/infinitecarousel/InfinteCarousel';
 
 const Home = () => {
   return (
@@ -26,6 +27,7 @@ const Home = () => {
       <Environment />
       <Integration />
       <Mission />
+      <InfinteCarousel />
     </div>
   )
 }
