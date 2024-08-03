@@ -27,7 +27,7 @@ const Home = () => {
       <Environment />
       <Integration />
       <Mission />
-      <InfinteCarousel />
+     
     </div>
   )
 }

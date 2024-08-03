@@ -69,6 +69,7 @@ import roses from "../assets/images/schools/roses.png";
 import thomas from "../assets/images/schools/thomas.png";
 import wesleygirls from "../assets/images/schools/wesleygirls.png";
 import presec from "../assets/images/schools/presec.png";
+import InfinteCarousel from './special/infinitecarousel/InfinteCarousel';
 
 const images = [aburi, accragirls, ksts, presec, owass, adisadel, roses, botwe, louis, prempeh, thomas, wesleygirls, peters];
 
@@ -86,7 +87,7 @@ const SecondarySchool = () => {
         Graduates from Good Foundation International School attend the most
         prestigious Secondary Institutions across the country.
       </p>
-      <section ref={targetRef} className="h-[100vh] bg-white">
+      {/* <section ref={targetRef} className="h-[100vh] bg-white">
         <div className=" top-0 flex h-screen items-center overflow-hidden gap-5">
           <motion.div style={{ x }} className="flex gap-4">
             {images.map((image, index) => (
@@ -100,7 +101,8 @@ const SecondarySchool = () => {
             ))}
           </motion.div>
         </div>
-      </section>
+      </section> */}
+      <InfinteCarousel />
     </div>
   );
 };

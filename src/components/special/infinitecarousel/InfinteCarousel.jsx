@@ -13,15 +13,17 @@ import accragirls from '../../../assets/images/schools/accragirls.png';
 import wesleygirls from '../../../assets/images/schools/wesleygirls.png';
 import louis from '../../../assets/images/schools/louis.png';
 
+import './infinite.css'
+
 const InfinteCarousel = () => {
     const images = [aburi, accragirls, ksts, presec, owass, adisadel, roses, botwe, louis, prempeh, thomas, wesleygirls, peters];
   return (
     <div>
-        <div>
-            <ul className="flex space-x-4">
+        <div className="scroller">
+            <ul className="scroller__inner">
                 {images.map((image, index) => (
                     <li key={index} className="inline-block">
-                        <img src={image} alt={`school ${index + 1}`} className="h-48 w-auto"/>
+                        <img src={image} alt={`school ${index + 1}`} className="h-24 w-24 object-cover"/>
 
                     </li>
                 ))}
