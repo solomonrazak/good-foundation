@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef, useEffect} from 'react';
 import presec from '../../../assets/images/schools/presec.png';
 import aburi from '../../../assets/images/schools/aburi.png';
 import adisadel from '../../../assets/images/schools/adisadel.png';
@@ -16,10 +16,35 @@ import louis from '../../../assets/images/schools/louis.png';
 import './infinite.css'
 
 const InfinteCarousel = () => {
+    const scrollerRef = useRef(null);
+    
+    useEffect(() => {
+        const scroller = scrollerRef.current;
+        if (!scroller) return;
+        
+        const scrollers = document.querySelectorAll(".scrollers");
+        const addAnimation = () => {
+            scrollers.forEach((scroller) => {
+                scroller.setAttribute('data-animated', true);
+                const scrollerInner = scroller.querySelector(".scroller__inner");
+                const scrollerContent = Array.from(scrollerInner.children);
+
+                scrollerContent.forEach(item => {
+                    const duplicatedItem = item.cloneNode(true);
+                    duplicatedItem.setAttribute("aria-hidden", true);
+                    scrollerInner.appendChild(duplicatedItem);
+                })
+            });
+        };
+
+        if (!window.matchMedia('(prefer-reduced-motion: reduce)').matches) {
+            addAnimation();
+          }
+    }, []) // only first render 
     const images = [aburi, accragirls, ksts, presec, owass, adisadel, roses, botwe, louis, prempeh, thomas, wesleygirls, peters];
   return (
-    <div>
-        <div className="scroller">
+    <div >
+        <div className="scrollers" ref={scrollerRef}>
             <ul className="scroller__inner">
                 {images.map((image, index) => (
                     <li key={index} className="inline-block">

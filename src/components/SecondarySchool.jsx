@@ -102,7 +102,10 @@ const SecondarySchool = () => {
           </motion.div>
         </div>
       </section> */}
-      <InfinteCarousel />
+
+      <div className='my-7'>
+      <InfinteCarousel/>
+      </div>
     </div>
   );
 };
