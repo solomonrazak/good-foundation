@@ -10,10 +10,12 @@ import Environment from '../components/Environment';
 import Integration from '../components/Integration';
 import Mission from '../components/Mission';
 import InfinteCarousel from '../components/special/infinitecarousel/InfinteCarousel';
+import AlumSlider from '../components/special/infinitecarousel/AlumSlider';
+import VideoClip from '../components/special/VideoClip';
 
 const Home = () => {
   return (
-    <div>
+    <div className="w-full">
       <Header />
       <Grid />
       <SecondarySchool />
@@ -26,7 +28,10 @@ const Home = () => {
       </div>
       <Environment />
       <Integration />
+      <AlumSlider />
+      <VideoClip />
       <Mission />
+     
      
     </div>
   )

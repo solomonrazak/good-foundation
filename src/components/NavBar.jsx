@@ -1,5 +1,6 @@
 import React from 'react';
 import Logo from './Logo';
+import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
   return (
@@ -7,6 +8,7 @@ const NavBar = () => {
       <Logo />
       <ul className='flex gap-8'>
         <li>About</li>
+        
         <li>Teachers</li>
         <li>Admissions</li>
         <li>Events</li>
