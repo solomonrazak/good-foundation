@@ -2,7 +2,7 @@ import React from 'react';
 
 const Mission = () => {
   return (
-    <div className="bg-gray-100 py-20 px-7">
+    <div className="bg-white py-20 px-7">
         <h1 className="text-slate-800 font-bold mb-10">Mission</h1>
         <div className="w-3 h-1 rounded-l-full rounded-r-full bg-green-900 mb-7"></div>
         <div>

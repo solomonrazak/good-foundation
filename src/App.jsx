@@ -5,7 +5,11 @@ import './App.css'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
 import { RouterProvider } from 'react-router-dom'
-import router from './routes'
+
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/Home'
+import About from './pages/About'
+import Event from './pages/Event'
 
 
 function App() {
@@ -14,7 +18,11 @@ function App() {
   return (
    <div className="overflow-x-hidden">
     <NavBar />
-    <RouterProvider router={router}/>
+    <Routes>
+      <Route path="/" element={<Home />}/>
+      <Route path="/about" element={<About />}/>
+      <Route path="/event" element={<Event />}/>
+    </Routes>
     <Footer />
    </div>
   )

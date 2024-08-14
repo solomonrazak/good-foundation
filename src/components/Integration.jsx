@@ -13,7 +13,7 @@ const Integration = () => {
           </p>
         </div>
         <div className="md:w-1/2">
-          <p className="text-slate-700 leading-loose">
+          <p className="text-slate-700 leading-loose pt-4">
             Students integrate concepts, theories, and methods from multiple
             disciplines, deepening their understanding of a topic. Students
             acquire discipline-specific understandings and produce a synthesis

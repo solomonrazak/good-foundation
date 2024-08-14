@@ -15,7 +15,7 @@ const VideoClip = () => {
     event.target.pauseVideo();
   };
 
-  return <YouTube videoId='NIk1-ck4c6Q' opts={options} onReady={handleReady} className="flex justify-center p-10"/>;
+  return <YouTube videoId='NIk1-ck4c6Q' opts={options} onReady={handleReady} className="flex justify-center p-10 my-10"/>;
 };
 
 export default VideoClip;
