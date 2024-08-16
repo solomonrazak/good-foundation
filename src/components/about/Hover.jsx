@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Welcome from './Welcome';
 
 const Hover = () => {
 
     const links = [
         {
-            path: "welcome",
-            element: "",
+            path: "/about/welcome",
+            element: <Welcome />,
             name: "Welcome to Good Foundation"
         },
         {
