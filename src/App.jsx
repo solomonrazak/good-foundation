@@ -6,6 +6,9 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Event from './pages/Event';
 import Welcome from './components/about/Welcome';
+import MissionandHistory from './components/about/MissionandHistory';
+import QuickFacts from './components/about/QuickFacts';
+import Calendar from './components/about/Calendar';
 
 function App() {
   return (
@@ -16,6 +19,9 @@ function App() {
         <Route path="/about" element={<About />}>
           
           <Route path="welcome" element={<Welcome />} />
+          <Route path="missionandhistory" element={<MissionandHistory />} />
+          <Route path="quickfacts" element={<QuickFacts />} />
+          <Route path="calendar" element={<Calendar />} />
         </Route>
         <Route path="/event" element={<Event />} />
       </Routes>

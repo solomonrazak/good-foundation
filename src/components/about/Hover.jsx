@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Welcome from './Welcome';
+import MissionandHistory from './MissionandHistory';
+import QuickFacts from './QuickFacts';
+import Calendar from './Calendar';
 
 const Hover = () => {
 
@@ -11,8 +14,8 @@ const Hover = () => {
             name: "Welcome to Good Foundation"
         },
         {
-            path: "missionandhistory",
-            element: "",
+            path: "/about/missionandhistory",
+            element: <MissionandHistory />,
             name: "Mission and History"
         },
         {
@@ -21,13 +24,13 @@ const Hover = () => {
             name: "Achievements"
         },
         {
-            path: "quick facts",
-            element: "",
+            path: "/about/quickfacts",
+            element: <QuickFacts />,
             name: "Quick Facts"
         },
         {
-            path: "calendar",
-            element: "",
+            path: "/about/calendar",
+            element: <Calendar />,
             name: "Calendar"
         }
 
