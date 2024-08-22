@@ -43,10 +43,10 @@ const NavBar = () => {
         <li>Staff</li>
         </NavLink>
         <NavLink to="">
-        <li onMouseEnter={handleAdHoverEnter} onMouseLeave={handleAdHoverLeave}>
+        <li onMouseEnter={handleAdHoverEnter}>
           Admissions
           {showAdHover && 
-          <div  className="absolute w-[100vw] left-0" onMouseEnter={handleAdHoverEnter} onMouseLeave={handleAdHoverEnter}>
+          <div  className="absolute w-[100vw] left-0" onMouseEnter={handleAdHoverEnter} onMouseLeave={handleAdHoverLeave}>
             <AdmissionHover />
           </div>
           

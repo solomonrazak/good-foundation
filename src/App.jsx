@@ -10,6 +10,7 @@ import MissionandHistory from './components/about/MissionandHistory';
 import QuickFacts from './components/about/QuickFacts';
 import Calendar from './components/about/Calendar';
 import Staff from './pages/Staff';
+import Achievements from './components/about/Achievements';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="missionandhistory" element={<MissionandHistory />} />
           <Route path="quickfacts" element={<QuickFacts />} />
           <Route path="calendar" element={<Calendar />} />
+          <Route path="achievements" element={<Achievements />}/>
         </Route>
         <Route path="staff" element={<Staff />}/>
         <Route path="/event" element={<Event />} />

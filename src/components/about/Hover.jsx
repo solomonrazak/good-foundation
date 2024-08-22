@@ -4,6 +4,7 @@ import Welcome from './Welcome';
 import MissionandHistory from './MissionandHistory';
 import QuickFacts from './QuickFacts';
 import Calendar from './Calendar';
+import Achievements from './Achievements';
 
 const Hover = () => {
 
@@ -19,8 +20,8 @@ const Hover = () => {
             name: "Mission and History"
         },
         {
-            path: "achievements",
-            element: "",
+            path: "/about/achievements",
+            element: <Achievements />,
             name: "Achievements"
         },
         {
