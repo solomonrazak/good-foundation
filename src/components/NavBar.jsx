@@ -55,7 +55,9 @@ const NavBar = () => {
         </li>
         </NavLink>
         <li>Events</li>
+        <NavLink to="/contact">
         <li>Contact Us</li>
+        </NavLink>
       </ul>
       <div>
         <button className='hidden md:block text-white bg-amber-600 px-2 py-1'>Donate</button>
