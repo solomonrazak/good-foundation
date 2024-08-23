@@ -12,6 +12,8 @@ import Calendar from './components/about/Calendar';
 import Staff from './pages/Staff';
 import Achievements from './components/about/Achievements';
 import AchievementDetail from './components/about/AchievementDetail';
+import Admissions from './pages/Admissions';
+import MainAdmission from './components/admission/MainAdmission';
 
 function App() {
   return (
@@ -27,6 +29,9 @@ function App() {
           <Route path="calendar" element={<Calendar />} />
           <Route path="achievements" element={<Achievements />}/>
           <Route path="achievements/:id" element={<AchievementDetail />} /> 
+        </Route>
+        <Route path="/admissions" element={<Admissions />}>
+        <Route path="main-admission" element={<MainAdmission />}/>
         </Route>
         <Route path="staff" element={<Staff />}/>
         <Route path="/event" element={<Event />} />

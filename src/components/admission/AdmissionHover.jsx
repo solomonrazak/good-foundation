@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import MainAdmission from './MainAdmission';
 
 const links = [
     {
-        path: "/about/welcome",
-        element: "",
+        path: "/admissions/main-admission",
+        element: <MainAdmission />,
         name: "Admissions"
     },
     {
