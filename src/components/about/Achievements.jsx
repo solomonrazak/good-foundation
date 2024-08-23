@@ -1,8 +1,10 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import sampleHeader from "../../assets/images/sampleHeader.jpg";
 import award1 from "../../assets/images/award1.jpg";
 import { FaRegCalendarDays } from "react-icons/fa6";
 import { MdOutlineArrowRight } from "react-icons/md";
+import {achievementUUIDs} from './AchievementDetail';
 
 const Achievements = () => {
     const [showMore, setShowMore] = useState(false);
@@ -11,6 +13,18 @@ const Achievements = () => {
     const handleLoadMore = () => {
         setShowMore(true);
         setHideButton(true);
+    }
+
+    const navigate = useNavigate();
+
+    const handleReadMore = (id) => {
+        if (id) {
+            navigate(`/about/achievements/${id}`);
+        }
+        else {
+            console.log('INVALID ID: ', id);
+        }
+       
     }
   return (
     <div>
@@ -34,7 +48,7 @@ const Achievements = () => {
             <div>
                 <p className="flex items-center gap-2 text-gray-500 text-sm"><FaRegCalendarDays /> January 20, 2024</p>
                 <p className="text-2xl font-medium text-slate-900">Good Foundation wins the Presidential Award</p>
-                <button className="flex items-center text-green-800">Read More<MdOutlineArrowRight className="mt-1"/></button>
+                <button className="flex items-center text-green-800" onClick={() => handleReadMore(achievementUUIDs.award1)}>Read More<MdOutlineArrowRight className="mt-1"/></button>
 
             </div>
         </div>

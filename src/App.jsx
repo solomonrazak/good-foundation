@@ -11,6 +11,7 @@ import QuickFacts from './components/about/QuickFacts';
 import Calendar from './components/about/Calendar';
 import Staff from './pages/Staff';
 import Achievements from './components/about/Achievements';
+import AchievementDetail from './components/about/AchievementDetail';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="quickfacts" element={<QuickFacts />} />
           <Route path="calendar" element={<Calendar />} />
           <Route path="achievements" element={<Achievements />}/>
+          <Route path="achievements/:id" element={<AchievementDetail />} /> 
         </Route>
         <Route path="staff" element={<Staff />}/>
         <Route path="/event" element={<Event />} />
