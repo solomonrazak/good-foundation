@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import MainAdmission from './MainAdmission';
 import Apply from './Apply';
+import Policy from './Policy';
 
 const links = [
     {
@@ -15,13 +16,13 @@ const links = [
         name: "Apply"
     },
     {
-        path: "achievements",
+        path: "ach",
         element: "",
         name: "Visit"
     },
     {
-        path: "/about/quickfacts",
-        element: "",
+        path: "/admissions/nondiscriminatorypolicy",
+        element: <Policy />,
         name: "Nondiscriminatory Policy"
     },
    
