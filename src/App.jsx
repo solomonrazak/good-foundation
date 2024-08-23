@@ -14,6 +14,7 @@ import Achievements from './components/about/Achievements';
 import AchievementDetail from './components/about/AchievementDetail';
 import Admissions from './pages/Admissions';
 import MainAdmission from './components/admission/MainAdmission';
+import Apply from './components/admission/Apply';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         </Route>
         <Route path="/admissions" element={<Admissions />}>
         <Route path="main-admission" element={<MainAdmission />}/>
+        <Route path="apply" element={<Apply />} />
         </Route>
         <Route path="staff" element={<Staff />}/>
         <Route path="/event" element={<Event />} />

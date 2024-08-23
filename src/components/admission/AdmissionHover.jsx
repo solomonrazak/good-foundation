@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import MainAdmission from './MainAdmission';
+import Apply from './Apply';
 
 const links = [
     {
@@ -9,8 +10,8 @@ const links = [
         name: "Admissions"
     },
     {
-        path: "/about/missionandhistory",
-        element: "",
+        path: "/admissions/apply",
+        element: <Apply />,
         name: "Apply"
     },
     {
