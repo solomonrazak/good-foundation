@@ -2,8 +2,8 @@ import DateTimeDisplay from './DateTimeDisplay';
 
 const ShowCounter = ({ days, hours, minutes, seconds }) => {
     return (
-      <div className="flex flex-col border-2 justify-center items-center gap-8 p-10 m-10 rounded-md border-red-500 w-[90%] mx-auto">
-      <div className="flex gap-8">
+      <div className="flex flex-col border-2 my-10 justify-center items-center gap-8 p-10 rounded-md border-red-500 w-[90%] mx-auto">
+      <div className="flex gap-6 md:gap-9 px-8">
         
           <DateTimeDisplay value={days} type={'Days'} isDanger={days <= 3} className=""/>
           <p className="mt-[4%] font-medium">:</p>
