@@ -17,6 +17,7 @@ import MainAdmission from "./components/admission/MainAdmission";
 import Apply from "./components/admission/Apply";
 import Policy from "./components/admission/Policy";
 import Contact from "./pages/Contact";
+import './App.css';
 
 function App() {
   return (
@@ -42,6 +43,14 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
+      <a
+        href="https://wa.me/2348100000000"
+        class="whatsapp_float"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa fa-whatsapp whatsapp-icon"></i>
+      </a>
     </div>
   );
 }
