@@ -1,9 +1,10 @@
 import React from 'react';
+import CountdownTimer from '../components/special/CountdownTimer';
 
 const Event = () => {
   return (
-    <div>Event
-      thii=s is s the event page
+    <div>
+      <CountdownTimer />
     </div>
   )
 }

@@ -1,11 +1,15 @@
-import React from 'react';
-import { useCountdown } from '../../hooks/useCountDown';
+import React, { useState } from 'react';
+import { useCountDown } from '../../hooks/useCountDown';
+
 import ExpiredNotice from './ExpiredNotice';
+import ShowCounter from './ShowCounter';
 
 
+const eventComing = new Date('2024-12-31T23:59:59');
 
 const CountdownTimer = ({targetDate}) => {
-  const [days, hours, minutes, seconds] = useCountdown(targetDate);
+  const [upcomingEvent, setUpcomingEvent] = useState(eventComing);
+  const [days, hours, minutes, seconds] = useCountDown(upcomingEvent);
 
   if (days + hours + minutes + seconds <= 0) {
     return <ExpiredNotice />;
