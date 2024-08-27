@@ -1,9 +1,20 @@
 import React, {useState} from 'react';
 import { PopupWidget } from "react-calendly";
+import { IoCall } from "react-icons/io5";
+import {
+  Modal,
+  ModalContent,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+  Button,
+  useDisclosure,
+} from "@nextui-org/react";
 
 
 const Mission = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpenNow, setIsOpenNow] = useState(false);
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
   const handleOpenSchedule = () => {
     setIsOpen(true); // If using state variable
@@ -32,7 +43,7 @@ const Mission = () => {
             <div className="flex flex-col md:flex-row gap-3 mt-5 md:mt-0 md:gap-6 md:justify-end md:mr-10">
               <div>
                 <button className="bg-amber-600 text-white w-40 md:h-20 md:w-20 p-2 font-medium" onClick={handleOpenSchedule}>Book</button>
-                {isOpen && (
+                {isOpenNow && (
        
 <div style={{ position: 'relative', left: '10px' }}>
   <PopupWidget
@@ -46,7 +57,63 @@ const Mission = () => {
       )}
                 </div>
                 <button className="bg-amber-600 text-white w-40 md:h-20 md:w-20 p-2 font-medium">Apply</button>
-                <button className="bg-amber-600 text-white w-40 md:h-20 md:w-20 p-2 font-medium">Give</button>
+                <Button className="bg-amber-600 text-white w-40 md:h-20 md:w-20 p-2 font-medium rounded-none" onPress={onOpen}>Give</Button>
+                <Modal
+                className="mx-5"
+          backdrop="opaque"
+          isOpen={isOpen}
+          onOpenChange={onOpenChange}
+          motionProps={{
+            variants: {
+              enter: {
+                y: -150,
+                opacity: 1,
+                transition: {
+                  duration: 0.3,
+                  ease: "easeOut",
+                },
+              },
+              exit: {
+                y: -20,
+                opacity: 0,
+                transition: {
+                  duration: 0.2,
+                  ease: "easeIn",
+                },
+              },
+            },
+          }}
+        >
+          <ModalContent className="bg-gray-100">
+            {(onClose) => (
+              <>
+                <ModalHeader className="flex flex-col gap-1 text-2xl text-amber-600">
+                  Support Our Cause
+                </ModalHeader>
+                <ModalBody className="text-gray-600 font-medium">
+                  <p>
+                    Thank you for choosing to support Good Foundation
+                    International School! Your donation will go a long way in
+                    helping us continue to provide quality education. To donate,
+                    please call our donation line and follow the simple
+                    instructions provided by our team.
+                  </p>
+                  <a href="tel:+233536732323" className="block w-full">
+                  <button className="flex w-full bg-green-500 justify-center gap-5 items-center text-white py-2 rounded-md mt-4">Click here to call <IoCall /></button>
+                  </a>
+                  <p className="mt-4">Every contribution makes a difference. Thank you for your generosity!</p>
+                 
+                 
+                </ModalBody>
+                <ModalFooter>
+                  <Button color="danger" variant="light" onPress={onClose}>
+                    Close
+                  </Button>
+                </ModalFooter>
+              </>
+            )}
+          </ModalContent>
+        </Modal>
             </div>
             </div>
         </div>
