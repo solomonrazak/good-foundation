@@ -18,6 +18,7 @@ import Apply from "./components/admission/Apply";
 import Policy from "./components/admission/Policy";
 import Contact from "./pages/Contact";
 import './App.css';
+import Visit from "./components/admission/Visit";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
           <Route path="main-admission" element={<MainAdmission />} />
           <Route path="apply" element={<Apply />} />
           <Route path="nondiscriminatorypolicy" element={<Policy />} />
+          <Route path="visit" element={<Visit />} />
         </Route>
         <Route path="/staff" element={<Staff />} />
         <Route path="/event" element={<Event />} />

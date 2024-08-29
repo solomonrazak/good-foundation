@@ -2,6 +2,7 @@ import React from "react";
 import sampleHeader from "../../assets/images/sampleHeader.jpg";
 import VideoClip from "../special/VideoClip";
 import AdCom from "./AdCom";
+import dzego from "../../assets/files/dzego.pdf";
 
 const MainAdmission = () => {
   return (
@@ -18,6 +19,7 @@ const MainAdmission = () => {
           <p>ADMISSIONS</p>
         </div>
       </div>
+      
       <div className="flex flex-col-reverse md:flex-row gap-10 p-10 mt-10">
         <div className="w-full md:[w-65%]">
           <p className="text-2xl md:text-4xl font-medium leading-10 text-gray-500">
@@ -33,9 +35,15 @@ const MainAdmission = () => {
             deadline, Good Foundation Interntional School will continue
             accepting new applications on a rolling basis. To apply to Good
             Foundation, please download our applicatin form
-            <span className="font-bold cursor-pointer text-blue-600 hover:text-blue-400 pl-2">
+            <a
+              href={dzego}
+              target="_blank"
+              rel="noopener noreferrer"
+
+              className="font-bold cursor-pointer text-blue-600 hover:text-blue-400 pl-2"
+            >
               here
-            </span>{" "}
+            </a>{" "}
             or visit our institution for further assistance and guidance.
           </p>
           <p className="mt-14 font-medium text-blue-400 pl-7 text-[18px] md:text-2xl cursor-pointer">

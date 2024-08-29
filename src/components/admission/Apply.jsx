@@ -2,6 +2,7 @@ import React from "react";
 import sampleHeader from "../../assets/images/sampleHeader.jpg";
 import VideoClip from "../special/VideoClip";
 import AdCom from "./AdCom";
+import dzego from '../../assets/files/dzego.pdf';
 
 const Apply = () => {
   return (
@@ -22,9 +23,9 @@ const Apply = () => {
         <div className="w-full md:[w-65%]">
           <p className="text-slate-700 text-[17px] flex flex-col md:flex-row gap-4">
             <span>Have you already Download your admission forms?</span>{" "}
-            <span className="font-bold text-blue-500 cursor-pointer hover:text-blue-400">
+            <a target="_blank" href={dzego} rel="noopener noreferrer" className="font-bold text-blue-500 cursor-pointer hover:text-blue-400">
               Click here to downlaod and complete application
-            </span>
+            </a>
           </p>
           <VideoClip />
         </div>

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import MainAdmission from './MainAdmission';
 import Apply from './Apply';
 import Policy from './Policy';
+import Visit from './Visit';
 
 const links = [
     {
@@ -16,8 +17,8 @@ const links = [
         name: "Apply"
     },
     {
-        path: "ach",
-        element: "",
+        path: "/admissions/visit",
+        element: <Visit />,
         name: "Visit"
     },
     {
