@@ -23,7 +23,7 @@ const itemVariants = {
 const subLinksVariants = {
   open: {
     opacity: 1,
-    maxHeight: "500px", // Arbitrary maxHeight to allow full expansion
+    maxHeight: "500px", 
     transition: { duration: 0.3 },
   },
   closed: {
@@ -42,7 +42,7 @@ const Links = ({ isOpen }) => {
 
   const items = [
     { label: "Home", to: "/" },
-    { label: "About", to: "/about", hasSubLinks: true, toggle: toggleAbout, isOpen: isAboutOpen },
+    { label: "About", to: "/about", hasSubLinks: true, toggle: toggleAbout, isOpen: isAboutOpen, isClickable: false },
     { label: "Staff", to: "/staff" },
     { label: "Admissions", to: "/admission", hasSubLinks: true, toggle: toggleAdmissions, isOpen: isAdmissionsOpen },
     { label: "Event", to: "/event" },
