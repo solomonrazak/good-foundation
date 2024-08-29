@@ -1,7 +1,7 @@
 import React from "react";
 import sampleHeader from "../../assets/images/sampleHeader.jpg";
 import AdCom from "./AdCom";
-import dzego from "../../assets/files/dzego.pdf";
+
 
 const Visit = () => {
   return (
