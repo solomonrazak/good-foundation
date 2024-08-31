@@ -44,7 +44,7 @@ const NavBar = () => {
       <Logo />
       </NavLink>
       <ul className="hidden md:flex gap-8">
-        <NavLink to="">
+        
           <li
             onMouseEnter={handleMouseEnter}
             onClick={() => setShowHover(true)}
@@ -60,11 +60,11 @@ const NavBar = () => {
               </div>
             )}
           </li>
-        </NavLink>
+        
         <NavLink to="/staff">
           <li>Staff</li>
         </NavLink>
-        <NavLink to="">
+        
           <li onMouseEnter={handleAdHoverEnter}>
             Admissions
             {showAdHover && (
@@ -77,7 +77,7 @@ const NavBar = () => {
               </div>
             )}
           </li>
-        </NavLink>
+        
         <NavLink to="/event">
           <li>Events</li>
         </NavLink>
