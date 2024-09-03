@@ -33,7 +33,7 @@ const MissionandHistory = () => {
         <div className="flex flex-col md:flex-row gap-14 text-gray-600">
           <img src={kids} width={550} height={550} className="object-contain" />
           <p className="text-2xl md:text-4xl font-bold">
-            Ross School was founded in 1991 by Courtney and Steven J. Ross, who
+            Good Foundation was founded in 1991 by Courtney and Steven J. Ross, who
             recognized that preparing students to meet the challenges of an
             increasingly connected and rapidly changing world requires
             innovative models to transform education.
@@ -41,7 +41,7 @@ const MissionandHistory = () => {
         </div>
         <p className="leading-8 text-[20px] font-medium mt-10 text-gray-600">
           Drawing on pedagogical research from leading education experts, the
-          Ross Model incorporates a global perspective with integrated, hands-on
+          Good Foundation Model incorporates a global perspective with integrated, hands-on
           learning and active problem-solving. Ross School is accredited by the
           New York State Association of Independent Schools (NYSAIS) and Middle
           States Association Commission on Elementary and Secondary Schools
