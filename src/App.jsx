@@ -1,29 +1,41 @@
-import React, { useState } from "react";
+import React, { useState, lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-import Home from "./pages/Home";
+
 import About from "./pages/About";
 import Event from "./pages/Event";
-import Welcome from "./components/about/Welcome";
-import MissionandHistory from "./components/about/MissionandHistory";
+
+
 import QuickFacts from "./components/about/QuickFacts";
 import Calendar from "./components/about/Calendar";
-import Staff from "./pages/Staff";
-import Achievements from "./components/about/Achievements";
-import AchievementDetail from "./components/about/AchievementDetail";
+
+
+
 import Admissions from "./pages/Admissions";
 import MainAdmission from "./components/admission/MainAdmission";
 import Apply from "./components/admission/Apply";
 import Policy from "./components/admission/Policy";
-import Contact from "./pages/Contact";
+
 import './App.css';
 import Visit from "./components/admission/Visit";
+import { Loading } from "./features/Loading";
+
+
+const Home = lazy(() => import("./pages/Home"));
+const MissionandHistory = lazy(() => import("./components/about/MissionandHistory"));
+const Welcome = lazy(() => import("./components/about/Welcome"));
+const Staff = lazy(() => import("./pages/Staff"));
+const Achievements = lazy(() => import("./components/about/Achievements"));
+const AchievementDetail = lazy(() => import("./components/about/AchievementDetail"));
+const Contact = lazy(() => import("./pages/Contact"));
+
 
 function App() {
   return (
     <div className="overflow-x-hidden">
       <NavBar />
+      <Suspense fallback={<div><Loading /></div>}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />}>
@@ -44,6 +56,7 @@ function App() {
         <Route path="/event" element={<Event />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      </Suspense>
       <Footer />
       <a
         href="https://wa.me/2348100000000"
