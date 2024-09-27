@@ -4,6 +4,7 @@ import sampleHeader from '../assets/images/sampleHeader.jpg'
 import { FaPhone } from "react-icons/fa";
 import { MdMarkEmailRead } from "react-icons/md";
 import Map from '../components/special/Map';
+import cover from "../assets/images/foundation/cover.JPG";
 
 const Contact = () => {
   return (
@@ -11,14 +12,13 @@ const Contact = () => {
         <div
         className="w-full h-[25rem] p-6 flex items-center"
         style={{
-          backgroundImage: `url(${sampleHeader})`,
+          backgroundImage: `url(${cover})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
         <div className="flex flex-col gap-10 text-white font-medium text-2xl">
-          <p>ABOUT</p>
-          <p>Student Calendar</p>
+          <p>Contact Us</p>
         </div>
       </div>
 
