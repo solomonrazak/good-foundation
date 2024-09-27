@@ -3,6 +3,9 @@ import sampleHeader from "../../assets/images/sampleHeader.jpg";
 import Community from "./Community";
 import kids from "../../assets/images/kids.jpeg";
 import VideoClip from "../special/VideoClip";
+import cover from "../../assets/images/foundation/cover.JPG";
+import mission3 from "../../assets/images/foundation/mission3.JPG";
+import mission4 from "../../assets/images/foundation/mission4.JPG";
 
 const MissionandHistory = () => {
   return (
@@ -10,7 +13,7 @@ const MissionandHistory = () => {
       <div
         className="w-full h-[23rem] p-6 flex items-center"
         style={{
-          backgroundImage: `url(${sampleHeader})`,
+          backgroundImage: `url(${cover})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -31,7 +34,7 @@ const MissionandHistory = () => {
       </div>
       <div className="px-10 md:px-20 my-14">
         <div className="flex flex-col md:flex-row gap-14 text-gray-600">
-          <img src={kids} width={550} height={550} className="object-contain" />
+          <img src={mission3} width={550} height={550} className="object-contain" />
           <p className="text-2xl md:text-4xl font-bold">
             Good Foundation was founded in 1991 by Courtney and Steven J. Ross, who
             recognized that preparing students to meet the challenges of an
@@ -51,6 +54,9 @@ const MissionandHistory = () => {
         </p>
       </div>
       <VideoClip />
+      <div>
+        <img src={mission4} alt=""/>
+      </div>
       
     </div>
   );

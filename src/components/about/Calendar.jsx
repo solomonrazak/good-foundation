@@ -1,6 +1,7 @@
 import React from 'react';
 import sampleHeader from "../../assets/images/sampleHeader.jpg";
 import Community from './Community';
+import calendar from "../../assets/images/foundation/calendar.JPG";
 
 const Calendar = () => {
   return (
@@ -26,6 +27,7 @@ const Calendar = () => {
         </div>
         <Community />
       </div>
+      <img src={calendar} alt=""/>
     </div>
   )
 };

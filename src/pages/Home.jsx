@@ -1,17 +1,18 @@
-import React from 'react';
-import Header from '../components/Header';
-import Grid from '../components/Grid';
-import SecondarySchool from '../components/SecondarySchool';
-import Lower from '../components/levels/Lower';
-import Middle from '../components/levels/Middle';
-import High from '../components/levels/High';
-import Boarding from '../components/levels/Boarding';
-import Environment from '../components/Environment';
-import Integration from '../components/Integration';
-import Mission from '../components/Mission';
-import InfinteCarousel from '../components/special/infinitecarousel/InfinteCarousel';
-import AlumSlider from '../components/special/infinitecarousel/AlumSlider';
-import VideoClip from '../components/special/VideoClip';
+import React from "react";
+import Header from "../components/Header";
+import Grid from "../components/Grid";
+import SecondarySchool from "../components/SecondarySchool";
+import Lower from "../components/levels/Lower";
+import Middle from "../components/levels/Middle";
+import High from "../components/levels/High";
+import Boarding from "../components/levels/Boarding";
+import Environment from "../components/Environment";
+import Integration from "../components/Integration";
+import Mission from "../components/Mission";
+import InfinteCarousel from "../components/special/infinitecarousel/InfinteCarousel";
+import AlumSlider from "../components/special/infinitecarousel/AlumSlider";
+import VideoClip from "../components/special/VideoClip";
+import calendar from "../assets/images/foundation/calendar.JPG";
 
 const Home = () => {
   return (
@@ -24,17 +25,16 @@ const Home = () => {
         <Middle />
         <High />
         <Boarding />
-
       </div>
       <Environment />
       <Integration />
+
       <AlumSlider />
+      <img src={calendar} alt="" />
       <VideoClip />
       <Mission />
-     
-     
     </div>
-  )
-}
+  );
+};
 
 export default Home;

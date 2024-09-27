@@ -1,15 +1,43 @@
 import React from "react";
-import sampleHeader from "../../assets/images/sampleHeader.jpg";
 import AdCom from "./AdCom";
+import cover from "../../assets/images/foundation/cover.JPG";
+import visit from "../../assets/images/foundation/visit.JPG";
+import slide1 from "../../assets/images/foundation/slide1.JPG";
+import slide2 from "../../assets/images/foundation/slide2.JPG";
+import slide3 from "../../assets/images/foundation/slide3.JPG";
+import slide4 from "../../assets/images/foundation/slide4.JPG";
+import slide5 from "../../assets/images/foundation/slide5.JPG";
+import slide6 from "../../assets/images/foundation/slide6.JPG";
+
+
+
+
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+const images = [slide1, slide2, slide3, slide3, slide4, slide5, slide6];
 
 
 const Visit = () => {
+  const settings = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    rtl: true,
+    arrows: true,
+    
+  }
+
   return (
     <div>
       <div
         className="w-full h-[23rem] p-6 flex items-center"
         style={{
-          backgroundImage: `url(${sampleHeader})`,
+          backgroundImage: `url(${cover})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -37,6 +65,7 @@ const Visit = () => {
             you'll get a firsthand look at the resources we provide to ensure
             that every student reaches their full potential.
           </p>
+          <img src={visit} alt=""/>
           <p className="md:text-[17px] leading-7 text-gray-600 mt-4">
             The experience extends beyond just the facilities. Our dedicated
             tour guides, often senior students or staff members, provide
@@ -64,6 +93,17 @@ const Visit = () => {
         <div className="w-full md:w-[35%]">
           <AdCom />
         </div>
+      </div>
+
+      <div>
+      <Slider {...settings}>
+            {images.map((slide, index) => (
+               
+                <img src={slide} alt={`Slide ${index + 1}`} key={index} className="w-full object-cover h-[30rem]" />
+              
+            ))}
+            </Slider>
+
       </div>
     </div>
   );

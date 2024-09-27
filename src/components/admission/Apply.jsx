@@ -3,6 +3,8 @@ import sampleHeader from "../../assets/images/sampleHeader.jpg";
 import VideoClip from "../special/VideoClip";
 import AdCom from "./AdCom";
 import dzego from '../../assets/files/dzego.pdf';
+import ad1 from "../../assets/images/foundation/ad1.JPG";
+import cover from "../../assets/images/foundation/cover.JPG";
 
 const Apply = () => {
   return (
@@ -10,7 +12,7 @@ const Apply = () => {
       <div
         className="w-full h-[23rem] p-6 flex items-center"
         style={{
-          backgroundImage: `url(${sampleHeader})`,
+          backgroundImage: `url(${cover})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -33,6 +35,7 @@ const Apply = () => {
           <AdCom />
         </div>
       </div>
+      <img src={ad1} alt=""/>
     </div>
   );
 };

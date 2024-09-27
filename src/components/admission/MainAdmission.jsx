@@ -3,6 +3,8 @@ import sampleHeader from "../../assets/images/sampleHeader.jpg";
 import VideoClip from "../special/VideoClip";
 import AdCom from "./AdCom";
 import dzego from "../../assets/files/dzego.pdf";
+import cover from "../../assets/images/foundation/cover.JPG";
+import ad from "../../assets/images/foundation/ad.JPG";
 
 const MainAdmission = () => {
   return (
@@ -10,7 +12,7 @@ const MainAdmission = () => {
       <div
         className="w-full h-[23rem] p-6 flex items-center"
         style={{
-          backgroundImage: `url(${sampleHeader})`,
+          backgroundImage: `url(${cover})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -60,6 +62,7 @@ const MainAdmission = () => {
           <AdCom />
         </div>
       </div>
+      <img src={ad} alt=""/>
     </div>
   );
 };

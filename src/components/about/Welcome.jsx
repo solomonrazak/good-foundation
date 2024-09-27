@@ -1,6 +1,7 @@
 import React from "react";
 import founder from "../../assets/images/founder.jpg";
 import Community from "./Community";
+import welcome from "../../assets/images/foundation/welcome.JPG";
 
 const Welcome = () => {
   return (
@@ -31,6 +32,7 @@ const Welcome = () => {
           />
         </div>
         <div className="w-full leading-8 text-[16px]">
+          {/* <img src={welcome} alt="" className="hidden md:block my-10"/> */}
           <p>
             Good Foundation guiding principle is to educate the whole child for
             the whole world. We center our educational programs around a
@@ -62,6 +64,7 @@ const Welcome = () => {
             you will visit our Institution to experience firsthand what makes Good Foundation
             such a unique and welcoming educational center.
           </p>
+          <img src={welcome} alt="" className=" my-10"/>
         </div>
         <p className="my-10 font-bold text-gray-700 text-[16px]">General Marcus, Head of School</p>
       </div>
