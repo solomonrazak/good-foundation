@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import { PopupWidget } from "react-calendly";
 import { IoCall } from "react-icons/io5";
+import mission1 from '../assets/images/foundation/mission1.JPG';
+import mission2 from '../assets/images/foundation/mission2.JPG';
 import {
   Modal,
   ModalContent,
@@ -38,6 +40,10 @@ const Mission = () => {
                 and also training for one to be quick, resolute and effective thinker to become competent agents of transformation.
             </p>
             <div className="w-full h-[0.5px] bg-slate-300 my-8 mr-6"></div>
+            <div className="space-y-5">
+              <img src={mission1}alt=""/>
+              <img src={mission2} alt=""/>
+            </div>
             <div className='flex flex-col md:flex-row md:items-center md:justify-between'>
             <p className="text-2xl md:text-5xl text-gray-700 italic mt-8 flex md:flex-col"><span>Take Action</span><span className="pl-2">...</span></p>
             <div className="flex flex-col md:flex-row gap-3 mt-5 md:mt-0 md:gap-6 md:justify-end md:mr-10">

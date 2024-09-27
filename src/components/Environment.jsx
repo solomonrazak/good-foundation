@@ -1,18 +1,19 @@
 import React from "react";
 import sampleHeader from "../assets/images/sampleHeader.jpg";
+import learning from '../assets/images/foundation/learning.JPG'
 
 const Environment = () => {
   return (
-    <div>
+    <div className="">
       <div
         className="py-14"
         style={{
-          backgroundImage: `url(${sampleHeader})`,
+          backgroundImage: `url(${learning})`,
           backgroundPosition: "center",
           backgroundSize: "cover",
         }}
       >
-        <h1 className="font-medium flex md:flex-col text-white text-2xl py-7 px-8"><span>Learning</span><span className="ml-3 md:ml-0">Environment</span></h1>
+        <h1 className="font-medium flex md:flex-col text-2xl py-7 px-8"><span>Learning</span><span className="ml-3 md:ml-0">Environment</span></h1>
         <div className="flex flex-col md:flex-row gap-3">
         <div className="md:w-1/2 text-[26px] font-medium text-white p-8">
           

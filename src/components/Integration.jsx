@@ -1,4 +1,8 @@
 import React from "react";
+import found1 from '../assets/images/foundation/found1.JPG';
+import found7 from '../assets/images/foundation/found7.JPG';
+import found9 from '../assets/images/foundation/found9.JPG';
+import found8 from '../assets/images/foundation/found8.JPG';
 
 const Integration = () => {
   return (
@@ -24,6 +28,12 @@ const Integration = () => {
       </div>
       <div className="flex md:justify-end">
         <button className="bg-amber-600 text-white text-[19px] px-4 py-2 font-medium md:mr-10 mt-7">Explore the curriculum</button>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-5">
+        <img src={found1} />
+        <img src={found7}/>
+        <img src={found8}/>
+        <img src={found9}/>
       </div>
     </div>
   );
