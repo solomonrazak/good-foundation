@@ -1,13 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import boarding from '../../assets/images/boarding.jpg';
 import './levels.css';
 import found5 from '../../assets/images/foundation/found5.JPG';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Boarding = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
 
     const [showPop, setShowPop] = useState(false);
   return (
-    <div className="relative p-6">
+    <div className="relative p-6" data-aos="fade-up">
     <div className="md:w-[34rem] md:h-96 h-60 relative" style={{ backgroundImage: `url(${found5})`, backgroundSize: "cover", backgroundPosition: "center" }}>
       <div
         className="absolute hidden bg-amber-600 right-0 md:flex cursor-pointer w-[25rem] justify-between px-4 py-3 text-[18px] font-medium text-white"

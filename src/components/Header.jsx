@@ -14,7 +14,7 @@ const Header = () => {
       />
       <div className="flex absolute w-full h-full top-5">
         <p className="text-[30px] text-center md:text-6xl p-5 md:text-start font-medium text-white pt-48">
-          A dynamic day and boarding school for finals in a serene environment
+          A dynamic day and boarding school for final years in a serene environment
           serving Nursery through to Junior High School{" "}
         </p>
       </div>

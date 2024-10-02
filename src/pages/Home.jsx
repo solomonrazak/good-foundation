@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import Header from "../components/Header";
 import Grid from "../components/Grid";
 import SecondarySchool from "../components/SecondarySchool";
@@ -9,12 +9,17 @@ import Boarding from "../components/levels/Boarding";
 import Environment from "../components/Environment";
 import Integration from "../components/Integration";
 import Mission from "../components/Mission";
-import InfinteCarousel from "../components/special/infinitecarousel/InfinteCarousel";
+
 import AlumSlider from "../components/special/infinitecarousel/AlumSlider";
 import VideoClip from "../components/special/VideoClip";
 import calendar from "../assets/images/foundation/calendar.JPG";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <div className="w-full">
       <Header />
@@ -26,12 +31,20 @@ const Home = () => {
         <High />
         <Boarding />
       </div>
+      <div data-aos="fade-up">
       <Environment />
+      </div>
+      <div data-aos="fade-up">
       <Integration />
+      </div>
+     
 
       <AlumSlider />
       <img src={calendar} alt="" />
+      <div data-aos="fade-up">
       <VideoClip />
+      </div>
+     
       <Mission />
     </div>
   );

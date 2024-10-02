@@ -40,10 +40,13 @@ const NavBar = () => {
 
   return (
     <div className="flex justify-between items-center md:px-3 py-2 border-b-4 border-green-400 fixed top-0 w-full bg-white z-40">
+      
+
+     
       <NavLink to="/">
       <Logo />
       </NavLink>
-      <ul className="hidden md:flex gap-8">
+      <ul className="hidden md:flex gap-8 font-medium">
         
           <li
             onMouseEnter={handleMouseEnter}

@@ -1,12 +1,17 @@
-import React from "react";
+import React, {useEffect} from "react";
 import gfis from '../assets/images/gfis.png'
 import { FaFacebookF, FaYoutube, FaLinkedin } from "react-icons/fa";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Footer = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <div className="bg-green-400 p-12 py-6">
-      <div className="grid grid-cols-2 md:grid-cols-3 mb-8">
+      <div className="grid grid-cols-2 md:grid-cols-3 mb-8" data-aos="fade-up">
         <h1 className="text-xl col-span-3 font-bold text-white md:col-span-2">Good Foundation International School</h1>
         <div className="hidden md:flex gap-4 text-white text-2xl md:col-span-1 ml-40">
           <FaFacebookF />
@@ -14,7 +19,7 @@ const Footer = () => {
           <FaLinkedin />
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-16 md:my-16">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-16 md:my-16" >
       <div className="flex flex-col md:col-span-2 text-white">
         <h1 className="font-bold mb-5">ABOUT</h1>
         <p>Good founcation International School is an academic institution that is commited to the provision of strong basic
@@ -32,7 +37,7 @@ const Footer = () => {
         <p>Junior High School: 000 000 000</p>
         <p>Basic School: 000 000 000</p>
         <p>Pre-School: 000 000 000</p>
-        <p>Vacation School: 000 000 000</p>
+        <p>Email Us:info@gfis.school</p>
         </div>
       </div>
       <div className="md:ml-10 text-white">

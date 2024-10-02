@@ -14,7 +14,7 @@ const ShowCounter = ({ days, hours, minutes, seconds }) => {
           <DateTimeDisplay value={seconds} type={'Seconds'} isDanger={false} />
         
       </div>
-      <p className="text-center text-blue-900 font-medium text-2xl">Remains To Event</p>
+      <p className="text-center text-blue-900 font-medium text-2xl">Remains To Re-Opening</p>
       </div>
       
 

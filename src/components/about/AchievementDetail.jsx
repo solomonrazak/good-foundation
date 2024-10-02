@@ -2,7 +2,7 @@
 
 import React from "react";
 import { useParams } from "react-router-dom";
-import sampleHeader from "../../assets/images/sampleHeader.jpg";
+import cover from "../../assets/images/foundation/cover.JPG";
 import { FaRegCalendarDays } from "react-icons/fa6";
 import award1 from "../../assets/images/award1.jpg";
 import { v4 as uuidv4 } from "uuid";
@@ -23,7 +23,7 @@ const achievementDetails = {
     image: award1,
   },
   [achievementUUIDs.award2]: {
-    title: "Another Achievement",
+    title: "Good Foundation wins MPs Award",
     date: "February 14, 2024",
     description: "Good Foundation achieved something remarkable...",
     image: "award2.jpg",
@@ -43,7 +43,7 @@ const AchievementDetail = () => {
           <div
             className="w-full h-[23rem] p-6 flex items-center"
             style={{
-              backgroundImage: `url(${sampleHeader})`,
+              backgroundImage: `url(${cover})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}

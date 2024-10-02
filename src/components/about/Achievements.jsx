@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import sampleHeader from "../../assets/images/sampleHeader.jpg";
+
 import award1 from "../../assets/images/award1.jpg";
 import { FaRegCalendarDays } from "react-icons/fa6";
 import { MdOutlineArrowRight } from "react-icons/md";
 import { achievementUUIDs } from "./AchievementDetail";
+import cover from "../../assets/images/foundation/cover.JPG";
 
 const Achievements = () => {
   const [showMore, setShowMore] = useState(false);
@@ -29,7 +30,7 @@ const Achievements = () => {
       <div
         className="w-full h-[23rem] p-6 flex items-center"
         style={{
-          backgroundImage: `url(${sampleHeader})`,
+          backgroundImage: `url(${cover})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -67,7 +68,7 @@ const Achievements = () => {
               <FaRegCalendarDays /> January 20, 2024
             </p>
             <p className="text-2xl font-medium text-slate-900">
-              Good Foundation wins the Presidential Award
+              Good Foundation wins MPs award
             </p>
             <button className="flex items-center text-green-800">
               Read More

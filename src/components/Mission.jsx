@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { PopupWidget } from "react-calendly";
 import { IoCall } from "react-icons/io5";
 import mission1 from "../assets/images/foundation/mission1.JPG";
@@ -13,7 +13,15 @@ import {
   useDisclosure,
 } from "@nextui-org/react";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const Mission = () => {
+
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
   const [isOpenNow, setIsOpenNow] = useState(false);
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
@@ -28,10 +36,10 @@ const Mission = () => {
     return false;
   }
   return (
-    <div className="bg-white py-20 px-7">
+    <div className="bg-white py-20 px-7" >
       <h1 className="text-slate-800 font-bold mb-10">Mission</h1>
       <div className="w-3 h-1 rounded-l-full rounded-r-full bg-green-900 mb-7"></div>
-      <div>
+      <div data-aos="fade-up">
         <p className="text-slate-600 font-medium text-[22px]">
           Our Mission is to be an institution that is committed to the provision
           of strong basic career-focused education, moral and godly life and
@@ -40,11 +48,11 @@ const Mission = () => {
         </p>
         <div className="w-full h-[0.5px] bg-slate-300 my-8 mr-6"></div>
         <div className="space-y-5">
-          <img src={mission1} alt="" />
-          <img src={mission2} alt="" />
+          <img src={mission1} alt="" data-aos="fade-up"/>
+          <img src={mission2} alt="" data-aos="fade-up"/>
         </div>
         <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-          <p className="text-2xl md:text-5xl text-gray-700 italic mt-8 flex md:flex-col">
+          <p className="text-2xl md:text-5xl text-gray-700 italic mt-8 flex md:flex-col" data-aos="fade-up">
             <span>Take Action</span>
             <span className="pl-2">...</span>
           </p>
@@ -53,6 +61,7 @@ const Mission = () => {
               <button
                 className="bg-amber-600 text-white w-40 md:h-20 md:w-20 p-2 font-medium"
                 onClick={handleOpenSchedule}
+                data-aos="fade-up"
               >
                 Book
               </button>
@@ -68,7 +77,7 @@ const Mission = () => {
                 </div>
               )}
             </div>
-            <button className="bg-amber-600 text-white w-40 md:h-20 md:w-20 p-2 font-medium">
+            <button className="bg-amber-600 text-white w-40 md:h-20 md:w-20 p-2 font-medium" data-aos="fade-up">
               Apply
             </button>
             <Button
