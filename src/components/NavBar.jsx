@@ -40,53 +40,49 @@ const NavBar = () => {
 
   return (
     <div className="flex justify-between items-center md:px-3 py-2 border-b-4 border-green-400 fixed top-0 w-full bg-white z-40">
-      
-
-     
       <NavLink to="/">
-      <Logo />
+        <Logo />
       </NavLink>
       <ul className="hidden md:flex gap-8 font-medium">
-        
-          <li
-            onMouseEnter={handleMouseEnter}
-            onClick={() => setShowHover(true)}
-          >
-            About
-            {showHover && (
-              <div
-                className="absolute w-[100vw] left-0"
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
-              >
-                <Hover />
-              </div>
-            )}
-          </li>
-        
+        <li onMouseEnter={handleMouseEnter} onClick={() => setShowHover(true)}>
+          About
+          {showHover && (
+            <div
+              className="absolute w-[100vw] left-0"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              <Hover />
+            </div>
+          )}
+        </li>
+
         <NavLink to="/staff">
           <li>Staff</li>
         </NavLink>
-        
-          <li onMouseEnter={handleAdHoverEnter}>
-            Admissions
-            {showAdHover && (
-              <div
-                className="absolute w-[100vw] left-0"
-                onMouseEnter={handleAdHoverEnter}
-                onMouseLeave={handleAdHoverLeave}
-              >
-                <AdmissionHover />
-              </div>
-            )}
-          </li>
-        
+
+        <li onMouseEnter={handleAdHoverEnter}>
+          Admissions
+          {showAdHover && (
+            <div
+              className="absolute w-[100vw] left-0"
+              onMouseEnter={handleAdHoverEnter}
+              onMouseLeave={handleAdHoverLeave}
+            >
+              <AdmissionHover />
+            </div>
+          )}
+        </li>
+
         <NavLink to="/event">
           <li>Events</li>
         </NavLink>
 
         <NavLink to="/contact">
           <li>Contact Us</li>
+        </NavLink>
+        <NavLink to="/subjects">
+          <li>Subjects</li>
         </NavLink>
       </ul>
       <div>
@@ -136,11 +132,14 @@ const NavBar = () => {
                     instructions provided by our team.
                   </p>
                   <a href="tel:+233536732323" className="block w-full">
-                  <button className="flex w-full bg-green-500 justify-center gap-5 items-center text-white py-2 rounded-md mt-4">Click here to call <IoCall /></button>
+                    <button className="flex w-full bg-green-500 justify-center gap-5 items-center text-white py-2 rounded-md mt-4">
+                      Click here to call <IoCall />
+                    </button>
                   </a>
-                  <p className="mt-4">Every contribution makes a difference. Thank you for your generosity!</p>
-                 
-                 
+                  <p className="mt-4">
+                    Every contribution makes a difference. Thank you for your
+                    generosity!
+                  </p>
                 </ModalBody>
                 <ModalFooter>
                   <Button color="danger" variant="light" onPress={onClose}>

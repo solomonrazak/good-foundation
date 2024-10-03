@@ -20,6 +20,7 @@ import Policy from "./components/admission/Policy";
 import './App.css';
 import Visit from "./components/admission/Visit";
 import { Loading } from "./features/Loading";
+import Subjects from "./pages/Subjects";
 
 
 const Home = lazy(() => import("./pages/Home"));
@@ -55,6 +56,7 @@ function App() {
         <Route path="/staff" element={<Staff />} />
         <Route path="/event" element={<Event />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/subjects" element={<Subjects />} />
       </Routes>
       </Suspense>
       <Footer />

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { useCountDown } from '../../hooks/useCountDown';
+import { useCountDown } from '../../hooks/useCountDown.js';
+
 
 import ExpiredNotice from './ExpiredNotice';
 import ShowCounter from './ShowCounter';
