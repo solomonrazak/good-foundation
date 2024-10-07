@@ -81,8 +81,8 @@ const NavBar = () => {
         <NavLink to="/contact">
           <li>Contact Us</li>
         </NavLink>
-        <NavLink to="/subjects">
-          <li>Subjects</li>
+        <NavLink to="/curriculum">
+          <li>Curriculum</li>
         </NavLink>
       </ul>
       <div>
