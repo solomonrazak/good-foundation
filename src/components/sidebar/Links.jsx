@@ -44,9 +44,10 @@ const Links = ({ isOpen }) => {
     { label: "Home", to: "/" },
     { label: "About", to: "/about", hasSubLinks: true, toggle: toggleAbout, isOpen: isAboutOpen, isClickable: false },
     { label: "Staff", to: "/staff" },
-    { label: "Admissions", to: "/admission", hasSubLinks: true, toggle: toggleAdmissions, isOpen: isAdmissionsOpen },
+    { label: "Admissions", to: "/admission", hasSubLinks: true, toggle: toggleAdmissions, isOpen: isAdmissionsOpen, isClickable: false },
     { label: "Event", to: "/event" },
     { label: "Contact Us", to: "/contact" },
+    { label: "Curriculum", to: "/curriculum" },
   ];
 
   const aboutSubLinks = [

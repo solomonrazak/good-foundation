@@ -23,18 +23,29 @@ const Event = () => {
         </div>
       </div>
       <div className="flex flex-col p-8 space-y-5">
-        <p className="text-[30px] md:text-[2rem] lg:text-[3rem] text-red-500 font-medium">Upcoming Event!!!</p>
+        <p className="text-[30px] md:text-[2rem] lg:text-[3rem] text-red-500 font-medium">
+          Upcoming Event!!!
+        </p>
         <p className="text-3xl font-medium text-gray-600">
-          Good Foundation 2024-2025 Academic Year Begins Soon!
+          Good Foundation celebrates 20 years of excellence!!
         </p>
         <p className="text-[16px] md:text-[18px] text-gray-600 leading-7">
-          As the summer comes to an end, excitement fills the air at Good
-          Foundation International School. The upcoming 2024-2025 academic year
-          promises new beginnings, fresh opportunities, and the chance for every
-          student to achieve their fullest potential. Whether you're returning
-          to continue your educational journey or joining us for the first time,
-          we can't wait to welcome you.
+          As we celebrate our 20th anniversary, Good Foundation International
+          School looks back with pride on two decades of nurturing students and
+          fostering academic growth. Since our inception, we have been dedicated
+          to providing quality education, helping our students realize their
+          full potential, and building a community grounded in values and
+          excellence.
         </p>
+        <p className="text-[16px] md:text-[18px] text-gray-600 leading-7">
+          This milestone marks not only the achievements of our past but also
+          the promise of a bright future. We are excited to share this
+          celebration with you and invite you to join us for special events
+          throughout the year as we continue to inspire and educate the next
+          generation. We look forward to{" "}
+          <span className="font-medium text-blue-400">seeing you soon!</span>
+        </p>
+
         <p className="text-[16px] md:text-[18px] text-gray-600 leading-7">
           To keep track of the days leading up to the start of the new academic
           year, we've added a countdown timer to our website. This timer will
@@ -49,50 +60,60 @@ const Event = () => {
           <span className="font-medium text-blue-400">seeing you soon!</span>
         </p>
       </div>
-      <h1 className="text-[25px] md:text-[2rem] text-red-500 font-medium pl-8 my-5 lg:text-[3rem]">Coming Up later this Term!!</h1>
+      <h1 className="text-[25px] md:text-[2rem] text-red-500 font-medium pl-8 my-5 lg:text-[3rem]">
+        Coming Up later this Term!!
+      </h1>
       <div className="px-8 grid grid-cols-1 lg:grid-cols-2 gap-5">
-      <div
-        style={{
-          backgroundImage: `url(${jersey1})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-        className="w-w-full h-[25rem] flex justify-center items-center"
-      >
-        <p className="text-amber-500 font-bold text-[3.3rem] text-center">Rep Your Jersey</p>
+        <div
+          style={{
+            backgroundImage: `url(${jersey1})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+          className="w-w-full h-[25rem] flex justify-center items-center"
+        >
+          <p className="text-amber-500 font-bold text-[3.3rem] text-center">
+            Rep Your Jersey
+          </p>
+        </div>
+        <div
+          style={{
+            backgroundImage: `url(${cooking})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+          className="w-w-full h-[25rem] flex justify-center items-center"
+        >
+          <p className="text-amber-500 font-bold text-[3.3rem] text-center">
+            Foundation Cooking Day
+          </p>
+        </div>
+        <div
+          style={{
+            backgroundImage: `url(${custome})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+          className="w-w-full h-[25rem] flex justify-center items-center"
+        >
+          <p className="text-amber-500 font-bold text-[3.3rem] text-center">
+            Traditional Custome Day
+          </p>
+        </div>
+        <div
+          style={{
+            backgroundImage: `url(${career})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+          className="w-w-full h-[25rem] flex justify-center items-center"
+        >
+          <p className="text-amber-500 font-bold text-[3.3rem] text-center">
+            Career Day
+          </p>
+        </div>
       </div>
-      <div
-        style={{
-          backgroundImage: `url(${cooking})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-        className="w-w-full h-[25rem] flex justify-center items-center"
-      >
-        <p className="text-amber-500 font-bold text-[3.3rem] text-center">Foundation Cooking Day</p>
-      </div>
-      <div
-        style={{
-          backgroundImage: `url(${custome})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-        className="w-w-full h-[25rem] flex justify-center items-center"
-      >
-        <p className="text-amber-500 font-bold text-[3.3rem] text-center">Traditional Custome Day</p>
-      </div>
-      <div
-        style={{
-          backgroundImage: `url(${career})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-        className="w-w-full h-[25rem] flex justify-center items-center"
-      >
-        <p className="text-amber-500 font-bold text-[3.3rem] text-center">Career Day</p>
-      </div>
-      </div>
-      <CountdownTimer />
+      {/* <CountdownTimer /> */}
     </div>
   );
 };
