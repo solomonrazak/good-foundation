@@ -1,6 +1,7 @@
 import React from "react";
-import sampleHeader from "../assets/images/sampleHeader.jpg";
+
 import bg from "../assets/images/foundation/bg.mp4";
+import cover from "../assets/images/foundation/cover.JPG";
 
 const Header = () => {
   return (
@@ -11,6 +12,7 @@ const Header = () => {
         loop
         muted
         className="w-full h-full object-cover"
+        poster={cover}
       />
       <div className="flex absolute w-full h-full top-5">
         <p className="text-[30px] text-center md:text-6xl p-5 md:text-start font-medium text-white pt-48">

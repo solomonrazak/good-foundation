@@ -1,6 +1,6 @@
 import React from "react";
-import CountdownTimer from "../components/special/CountdownTimer";
-import sampleHeader from "../assets/images/sampleHeader.jpg";
+// import CountdownTimer from "../components/special/CountdownTimer";
+
 import jersey1 from "../assets/images/foundation/jersey1.JPG";
 import cover from "../assets/images/foundation/cover.JPG";
 import cooking from "../assets/images/foundation/cooking.JPG";
