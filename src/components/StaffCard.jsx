@@ -7,8 +7,8 @@ const StaffCard = ({ name, role, image }) => {
       src={image}
       alt={`${name}'s profile`}
       className="object-contain mx-auto"
-      width={150}
-      height={150}
+      width={200}
+      height={200}
     />
     <p className="text-2xl font-medium text-gray-600">{name}</p>
     <p className="text-gray-500 mb-1">{role}</p>
