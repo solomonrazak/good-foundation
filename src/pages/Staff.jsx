@@ -15,6 +15,13 @@ import seth from "../assets/images/newstaff/Seth-Tieku.webp";
 import steph from "../assets/images/newstaff/Stephen-Edusei-Yirenkyi.webp";
 import vida from "../assets/images/newstaff/Vida-Danso.webp";
 import yaw from "../assets/images/newstaff/Yaw-Frimpong.webp";
+import tt from "../assets/images/newstaff/Esther-Amaki-Tetteh.webp";
+import esther from "../assets/images/newstaff/Esther-Tetteh-Agudah.webp";
+import helena from "../assets/images/newstaff/Helena-Agyemang-Boakye.webp";
+import baidoo from "../assets/images/newstaff/Godfred-Baidoo.webp";
+import dd from "../assets/images/newstaff/Daniel-Agyarko.webp";
+import agnes from "../assets/images/newstaff/Agnes-Boateng.webp";
+import ansah from "../assets/images/newstaff/Ansah-Daniel-Sasraku.webp";
 import StaffText from "../components/StaffText";
 import StaffCard from "../components/StaffCard";
 
@@ -34,6 +41,13 @@ const staffData = [
   { name: "Stephen Edusei Yirenkyi", role: "Teacher", image: steph },
   { name: "Vida Danso ", role: "Teacher", image: vida },
   { name: "Yaw Frimpong", role: "Teacher", image: yaw },
+  { name: "Esther Amaki Tetteh", role: "Teacher", image: tt },
+  { name: "Esther Tetteh Agudah", role: "Teacher", image: esther },
+  { name: "Helena Agyemang Boakye", role: "Teacher", image: helena },
+  { name: "Godfred Baidoo", role: "Teacher", image: baidoo },
+  { name: "Daniel Agyarko", role: "Teacher", image: dd },
+  { name: "Agnes Boateng", role: "Teacher", image: agnes },
+  { name: "Ansah Daniel Sasraku", role: "Teacher", image: ansah},
   // Add more staff members as needed
 ];
 
