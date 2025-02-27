@@ -39,7 +39,7 @@ const NavBar = () => {
   };
 
   return (
-    <div className="flex justify-between items-center md:px-3 py-2 border-b-4 border-green-400 fixed top-0 w-full bg-white z-40">
+    <div className="flex justify-between container mx-auto items-center md:px-3 py-2 border-b-4 border-green-400 fixed top-0 w-full bg-white z-40">
       <NavLink to="/">
         <Logo />
       </NavLink>

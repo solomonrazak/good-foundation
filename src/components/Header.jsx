@@ -5,7 +5,7 @@ import cover from "../assets/images/foundation/cover.JPG";
 
 const Header = () => {
   return (
-    <main className="w-screen h-[38rem]">
+    <main className="w-full h-[38rem] container mx-auto">
       <video
         src={bg}
         autoPlay
